@@ -13,7 +13,12 @@
                 grid-template-columns: 40% auto;
             }
         }
-    }  
+    }
+    .hero {
+        .polka {
+            width: initial !important;
+        }
+    }
     .hero2 {
         padding-top: 80px;
         .message {
