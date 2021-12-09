@@ -1,0 +1,56 @@
+@import '_colors';
+
+.scroller {
+    &>.content {
+        display: grid;
+        grid-template-columns: 150px auto;
+    }
+    .nav {
+        width: 100%;
+        .prev, .next {
+            display: inline-block;
+            opacity: .7;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: opacity 0.3s ease-out;
+            &:active, &:hover {
+                opacity: 1;
+            }
+        }
+        .prev.inactive, .next.inactive {
+            opacity: 0.25 !important;
+            filter: grayscale(100%); 
+            -webkit-filter: grayscale(100%);
+            pointer-events: none;
+        }
+        .prev {
+            background-image: url('/dist/images/chevron-left-thin.svg');
+        }
+        .next {
+            background-image: url('/dist/images/chevron-right-thin.svg');
+        }
+
+    }
+    .cards {
+        .card {
+            width: 350px;
+            .image {
+                width: 100%;
+                padding-bottom: 100%;
+                position: relative;
+                background-size: cover;
+                background-position: center;
+            }
+            .content {
+                padding-bottom: 20px;
+                &>p, &>a {
+                    display: inline-block;
+                    margin-top: 12px;
+                }
+                &>.subtitle {
+                    margin-top: 22px;
+                }
+            }
+        }
+    }
+}

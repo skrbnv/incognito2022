@@ -1,0 +1,178 @@
+@import '_colors';
+
+h1, h2, h3, h4, h5, h6, p, a, body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 52px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+}
+
+li {
+    margin:0 0 10px 0;   
+}
+
+.menu {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.button {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+}
+
+.subtitle.l1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+}
+
+.subtitle.l2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.accent.l1 {
+    color: $sonic;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.accent.l2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.footer, .footer p, .footer div {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer .small {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+@media screen  and (max-width: $mobile) {
+    h1 {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 46px;
+    }
+    
+    h2 {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 40px;
+    }
+    
+    h3 {
+        font-size: 26px;
+        font-weight: 800;
+        line-height: 34px;
+    }
+    
+    h4 {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 28px;
+    }
+    
+    .menu {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+    
+    .button {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+    }
+    
+    .subtitle.l1 {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+    }
+    
+    .subtitle.l2 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    
+    .accent.l1 {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    
+    .accent.l2 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+    
+    .footer.l1 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    
+    .footer.l2 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    } 
+}

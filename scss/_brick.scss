@@ -1,0 +1,25 @@
+@import '_colors';
+
+.brick {
+    .grid {
+        background-color: $raisin;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        .content {
+            padding: 90px;
+            &>p, &>h3 {
+                color: white;
+            }
+            &>p {
+                margin-top: 20px;
+            }
+        }
+        .image {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

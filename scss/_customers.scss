@@ -1,0 +1,64 @@
+@import '_colors';
+
+.customers {
+    position: relative;
+    margin-top: 150px;
+    .cradle {
+        &:before {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: $crimson;
+            opacity: 0.15;
+            border-radius: 100px;
+            position: absolute;
+            top: 0;
+            transform: translateY(-50%);
+        }
+        padding-top: 100px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 50% 50%;
+    }
+    background-color: $raisin;
+    padding: 0 0 170px 0;
+    p {
+        color: $semigray;
+    }
+    h2 {
+        color: white;
+        &:after {
+            content: "";
+            display: block;
+            margin-top: 40px;
+            width: 105px;
+            height: 10px;
+            background-color: $crimson;
+        }
+    }
+    .polka {
+        position: absolute;
+        left: 0;
+        bottom: 100px;
+        width: 50%;
+        height: 90px;
+        z-index: 2; 
+        background-image: url('/dist/images/polka.svg');
+        background-size: 9px auto;
+    }
+    .logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        div {
+            width: 100%;
+            padding: 15px 0 15px 0;
+            text-align: center;
+            img {
+                object-position: center;
+                opacity: 0.5;
+            }
+        }
+    }
+}

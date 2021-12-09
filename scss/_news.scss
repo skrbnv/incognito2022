@@ -1,0 +1,41 @@
+@import '_colors';
+
+.news .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    .header {
+        background-position: center;
+        background-size: cover;
+        grid-column: 1 / span 2;
+        padding: 60px 120px 100px 120px;
+        background-color: $raisin;
+        position: relative;
+        p {
+            color: white;
+        }
+        p.accent {
+            margin-top: 30px;
+            padding-bottom: 65px;
+            max-width: 800px;
+        }
+        &:after {
+            content: '';
+            display: block;
+            width: 110px;
+            height: 10px;
+            position: absolute;
+            left: 0; 
+            top: 70px;
+            background-color: $crimson;
+        }
+    }
+    .card {
+        padding: 60px 120px 60px 120px;
+        background-color: $lightgray;
+        a.right {
+            display: inline-block;
+            margin-top: 40px;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@import '_colors';
+
+.assets {
+    .prime {
+        overflow: hidden;
+        position: relative;
+        color: white;
+        background: linear-gradient(126.49deg, #458097 0%, #212636 100%);
+        background-position-x: right;
+        background-size: 60%;
+        background-repeat: no-repeat;
+        padding: 120px 0;
+        .content {
+            display: grid;
+            grid-template-columns: 60% auto;
+            gap: 20px;
+            .image {
+                position: relative;
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: 2;
+                    width: 100%;
+                    height: 100%;
+                    min-height: 300px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 100px;
+                    height: 100px;
+                    background-color: #D91F37;
+                    opacity: 0.15;
+                    border-radius: 100px;
+                    position: absolute;
+                    z-index: 3;
+                    top: 0;
+                    left: 0;
+                    transform: translate(-50%, -50%);
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    right: -60px;
+                    top: -60px;
+                    width: 80%;
+                    height: 90px;
+                    z-index: 2; 
+                    background-image: url('/dist/images/polka.svg');
+                    background-size: 9px auto;
+                }
+            }
+            .text {
+                padding: 60px;
+                p {
+                    margin-top: 30px;
+                }
+                &>a {
+                    display: inline-block;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    .scroller {
+        margin-top: 60px;
+    }
+}

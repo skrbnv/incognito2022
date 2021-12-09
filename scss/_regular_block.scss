@@ -1,0 +1,82 @@
+@import '_colors';
+
+.regular-block {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: row dense;
+        gap: 10%;
+        .image {
+            position: relative;
+            padding-bottom: 100%;
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 3;
+            }
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: -10%;
+                top: -10%;
+                right: initial;
+                bottom: initial;
+                width: 100%;
+                height: 60%;
+                background-image: url('/dist/images/polka-gray.svg');
+                background-size: 9px auto;
+                z-index: 2;
+            }
+        }
+        .content {
+            &>p {
+                margin-top: 20px;
+            }
+        }
+    }
+    &.image-left {
+        .image {
+            grid-column-start: 1;
+            &:after {
+                left: -10%;
+                top: initial;
+                right: initial;
+                bottom: -10%;
+            }
+        }
+        .content {
+            grid-column-start: 2;
+        }
+    }
+    .image {
+        &.lt:after {
+            left: -10%;
+            top: -10%;
+            right: initial;
+            bottom: initial;
+        }
+        &.lb:after {
+            left: -10%;
+            top: initial;
+            right: initial;
+            bottom: -10%;
+        }
+        &.rt:after {
+            left: initial;
+            top: -10%;
+            right: -10%;
+            bottom: initial;
+        }
+        &.rb:after {
+            left: initial;
+            top: initial;
+            right: -10%;
+            bottom: -10%;
+        }
+    }
+}

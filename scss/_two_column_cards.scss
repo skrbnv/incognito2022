@@ -1,0 +1,24 @@
+@import '_colors';
+
+.two-column-cards {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        .card {
+            background: $lightgray;
+            padding: 90px;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 72px;
+                height: 72px; 
+                left: 0;
+                top: 90px;
+                background-image: url('/dist/images/polka-gray.svg');
+                background-size: 9px auto;
+            }
+        }
+    }
+}
