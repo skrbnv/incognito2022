@@ -1811,15 +1811,28 @@ p {
     -ms-grid-columns: 40% auto;
         grid-template-columns: 40% auto;
   }
+  .color-wrapper .polka.d:after {
+    height: 76px !important;
+  }
+  .color-wrapper .polka.r {
+    width: 30% !important;
+  }
   .hero .polka {
     width: initial !important;
   }
   .hero2 {
     padding-top: 80px;
   }
+  .hero2 .extrabg:before {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(85%, rgba(255, 255, 255, 0)), color-stop(85%, white));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 85%, white 85%);
+  }
   .hero2 .message {
     margin-left: 0 !important;
     padding: 50px !important;
+  }
+  .customers .polka {
+    bottom: 50px;
   }
   .three-columns .grid {
     gap: 30px;
@@ -1838,6 +1851,9 @@ p {
     gap: 20px;
     -ms-grid-columns: auto 40%;
         grid-template-columns: auto 40%;
+  }
+  .regular-block .image:after {
+    display: none !important;
   }
   .regular-block.image-left .grid {
     -ms-grid-columns: 40% auto;

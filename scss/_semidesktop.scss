@@ -14,6 +14,14 @@
             }
         }
     }
+    .color-wrapper {
+        .polka.d:after {
+            height: 76px !important;
+        }
+        .polka.r {
+            width: 30% !important;
+        }
+    }
     .hero {
         .polka {
             width: initial !important;
@@ -21,9 +29,17 @@
     }
     .hero2 {
         padding-top: 80px;
+        .extrabg:before {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 85%, white 85%);
+        }
         .message {
             margin-left: 0 !important;
             padding: 50px !important;
+        }
+    }
+    .customers {
+        .polka {
+            bottom: 50px;
         }
     }
     .three-columns {
@@ -45,6 +61,9 @@
         .grid {
             gap: 20px;
             grid-template-columns: auto 40%;
+        }
+        .image:after {
+            display: none !important;
         }
     }
     .regular-block.image-left {
