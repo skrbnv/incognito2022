@@ -1,6 +1,11 @@
 @import '_colors';
 
 @media screen and (max-width: $mobile) {
+    .color-wrapper {
+        .polka.r {
+            width: 40px !important;
+        }
+    }
 
     .hero {
         padding-bottom: 150px;
@@ -248,7 +253,7 @@
         }
         &.useimage {
             .r {
-                background: $semigray;
+                background: $lightgray !important;
                 .image {
                     padding-left: 0;
                     &:after {

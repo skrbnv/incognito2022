@@ -17,9 +17,12 @@
             transform: translateY(-50%);
         }
         padding-top: 100px;
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 50% 50%;
+        .grid {
+            width: calc(100% - 30px);
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 50% 50%;
+        }
     }
     background-color: $raisin;
     padding: 0 0 170px 0;
@@ -28,6 +31,7 @@
     }
     h2 {
         color: white;
+        margin-top: 5px;
         &:after {
             content: "";
             display: block;

@@ -3,12 +3,13 @@
 .button {
     display: inline-block;
     position: relative;
-    padding: 20px 40px 20px 40px;
+    padding: 12px 32px 12px 32px;
     border-radius: 40px;
-    border: 2px solid $crimson;
+    border: 3px solid $crimson;
     color: white;
     background-color: $crimson;
     transition: background-color 0.3s ease-out, color 0.3s ease-out;
+    cursor: pointer;
     &:active, &:hover {
         background-color: white;
         color: $crimson;

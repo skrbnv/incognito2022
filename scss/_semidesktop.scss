@@ -1,0 +1,108 @@
+@import '_colors';
+
+@media screen and (min-width: ($tablet + 1)) and (max-width: $semidesktop) {
+    .news {
+        .card {
+            padding: 60px !important;
+        }
+    }
+    .assets {
+        .prime {
+            background-size: 80%;
+            .content {
+                grid-template-columns: 40% auto;
+            }
+        }
+    }  
+    .hero2 {
+        padding-top: 80px;
+        .message {
+            margin-left: 0 !important;
+            padding: 50px !important;
+        }
+    }
+    .three-columns {
+        .grid {
+            gap: 30px;
+            margin-left: 0;
+            .big-card {
+                grid-column: 2/span 2;
+                padding: 40px;
+            }
+        }
+    }
+    .alternating-columns {
+        .grid {
+            margin-left: 0;
+        }
+    }
+    .regular-block {
+        .grid {
+            gap: 20px;
+            grid-template-columns: auto 40%;
+        }
+    }
+    .regular-block.image-left {
+        .grid {
+            grid-template-columns: 40% auto;
+        }
+    }
+
+    .two-cards {
+        .cradle {
+            padding: 0 15px;
+            padding-bottom: 60px;
+            .grid {
+                gap: 30px;
+            }
+        }
+    }
+    .two-column-cards {
+        .grid {
+            gap: 20px;
+            .card {
+                padding: 80px 40px 40px 40px;
+                &:after {
+                    width: 80px;
+                    height: 51px;
+                    top: 4px;
+                    left: 40px;
+                }
+            }
+        }
+    }
+    .double-video {
+        .cradle {
+            padding: 60px 15px 0 15px;
+            &:after {
+                left: 0;
+            }
+            .grid {
+                gap: 20px;
+            }
+        }
+    }
+    .tabs {
+        .tab {
+            padding: 40px;
+            .grid {
+                grid-template-columns: 1fr;
+                &>.content {
+                    grid-row-start: 1;
+                }
+            }
+        }
+    }
+    .tabs-vertical {
+        .r {
+            padding: 40px !important;
+        }
+        .subgrid {
+            grid-template-columns: 1fr !important;
+        }
+        &.useimage .r {
+            padding: 40px;
+            background: $lightgray;
+        }
+    }
+}
