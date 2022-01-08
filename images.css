@@ -1,0 +1,42 @@
+.customers-2022 .polka{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/polka.svg') }});}
+.hero2-2022 .polka{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/polka.svg') }});}
+.hero-2022 .polka-bg .polka{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/polka.svg') }});}
+.scroller-2022 .nav .prev{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-left-thin.svg') }})}
+.scroller-2022 .nav .next{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-right-thin.svg') }})}
+.assets-2022 .prime .content .image:before{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/polka.svg') }});}
+.regular-block-2022 .grid .image:after{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/polka-gray.svg') }});}
+.alternating-columns-2022 .grid .image:after{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/polka-gray.svg') }});}
+.two-column-cards-2022 .grid .card:after{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/polka-gray.svg') }});}
+.spread-2022:after{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/polka-gray.svg') }});}
+.right-2022:after{-webkit-mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-right.svg') }});mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-right.svg') }});}
+
+.color-wrapper .polka.r{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/polka.svg') }});}
+.color-wrapper .polka.d:after{background-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/polka.svg') }});}
+
+a.right:after {-webkit-mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-right.svg') }});mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-right.svg') }});}
+/*
+.template-2022 .dropdown:after{-webkit-mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-down.svg') }});mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-down.svg') }});}
+
+.topline-2022 .dropdown:after{-webkit-mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-down.svg') }});mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-down.svg') }});}
+.topline-2022 .desktop_menu li.hs-menu-depth-1.hs-item-has-children:after{-webkit-mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-down.svg') }});mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-down.svg') }});}
+.topline-2022 .desktop_menu li.hs-menu-depth-2.hs-item-has-children:after{-webkit-mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-right.svg') }});mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-right.svg') }});}
+*/
+
+
+
+.incognito-search-trigger i {
+    background-image: url({{ get_asset_url('/Incognito Blocks 2022/dist/images/search.png') }});
+}
+.incognito-search-close-trigger i {
+    background-image: url({{ get_asset_url('/Incognito Blocks 2022/dist/images/search-close.png') }});
+} 
+
+.hs-menu-wrapper ul li.hs-menu-depth-2:after {
+  -webkit-mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-right.svg') }});
+  mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-right.svg') }});
+}
+
+.child-trigger:after {
+  -webkit-mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-down.svg') }}) !important;
+  mask-image:url({{ get_asset_url('/Incognito Blocks 2022/dist/images/chevron-down.svg') }}) !important;    
+}

@@ -1,6 +1,11 @@
 @import '_colors';
 
-.button {
+
+.button-2022 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
     display: inline-block;
     position: relative;
     padding: 12px 32px 12px 32px;
@@ -21,10 +26,17 @@
             background-color: $crimson;
             color: white;
         }
-    }
-
-
-
-    
+    }  
+    &.inverse-white {
+        color: $crimson;
+        border: 3px solid white;
+        background-color: white;
+        &:active, &:hover {
+            border: 3px solid $crimson;
+            background-color: $crimson;
+            color: white;
+        }
+    }  
 }
+
 

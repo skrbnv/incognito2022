@@ -1,4 +1,3 @@
-@import '_fonts'; 
 @import '_colors';
 @import '_buttons'; 
 @import '_hero';
@@ -16,69 +15,13 @@
 @import '_video';
 @import '_spread';
 @import '_tabs';
+@import '_cta';
+@import '_header';
+@import '_footer';
+/*@import '_topline';*/
 @import '_mobile';
 @import '_tablet';
 @import '_semidesktop';
-
-@keyframes flipperX {
-    0%   { transform: scaleX(100%); }
-    50%  { transform: scaleX(0); }
-    100% { transform: scaleX(100%); }
-  }
-
-@keyframes flipperY {
-    0%   { transform: scaleY(100%); }
-    50%  { transform: scaleY(0); }
-    100% { transform: scaleY(100%); }
-  }
-
-html, body {
-    padding: 0;
-    margin: 0;
-    &>div {
-        margin-top: 120px;
-    }
-    &>div.menu, &>div.hero, &>div.after-hero {
-        margin-top: 0;
-    }
-    &>div.title {
-        margin-bottom: 0;
-
-    }
-}
-
-a {
-    color: $crimson;
-    position: relative;
-    text-decoration: none;
-}
-
-p, h1, h2, h3, h4, h5, h6 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-p>a {
-    text-decoration: underline;
-}
-
-.cradle {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1400px;
-    padding: 0 15px;
-}
-
-.cradle-right {
-    margin-left: auto; 
-    margin-right: 0;
-    padding-left: 15px;
-    max-width: calc(50% + 700px);
-}
-
-.padded {
-    padding: 0 15px;
-}
 
 @media screen and (max-width: $mobile) {
     .hide-on-mobile {
@@ -86,84 +29,31 @@ p>a {
     }
 }
 
-.title {
-    &:after {
-        content: "";
-        display: block;
-        margin-top: 25px;
-        width: 105px;
-        height: 10px;
-        background-color: $crimson;
-        margin-bottom: 50px;
+body {
+    &>div.title-2022 {
+        margin-bottom: 0;
     }
 }
 
-.right {
-    padding-right: 25px;
-    &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 20px;
-        height: 100%;
-        background-color: $crimson;
-        -webkit-mask-image: url(/dist/images/chevron-right.svg);
-        mask-image: url(/dist/images/chevron-right.svg);
-        mask-position: center center;
-        mask-repeat: no-repeat;
-        animation-duration: .4s;
-        animation-iteration-count: 1;
-    }
-    &:active, &:hover {
-        &:after {
-            animation-name: flipperY;
-            animation-timing-function: ease;
-        }
-    }
+.title-2022 {
+    margin-top: 100px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
 }
 
-.dropdown {
-    padding-right: 21px;
-    color: $raisin;
-    &:after {
-        content: "";
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 16px;
-        height: 100%;
-        background-color: $raisin;
-        -webkit-mask-image: url(/dist/images/chevron-down.svg);
-        mask-image: url(/dist/images/chevron-down.svg);
-        mask-position: center center;
-        mask-repeat: no-repeat;
-        animation-duration: .4s;
-        animation-iteration-count: 1;
-    }
-    &:active, &:hover {
-        &:after {
-            animation-name: flipperX;
-            animation-timing-function: ease;
-        }
+@media screen and (max-width: $mobile) {
+    .title-2022 {
+        margin-top: 60px;
     }
 }
-
-.footer .right {
-    padding-right: 22px;
-    &:after {
-        width: 17px;
-    }
-}
-
 
 .color-wrapper {
+    margin-top: 100px;
     padding: 0.05px 0 60px 0;
     position: relative;
     &.bg-crimson {
-        background: linear-gradient(126.49deg, #D91E39 0%, #212636 100%);
+        background: linear-gradient(126.49deg, #D91E39 0%, $raisin 100%);
         color: white;
         .cradle {
             &:before {
@@ -173,36 +63,33 @@ p>a {
         p, div {
             color: white;
         }
-        .title {
+        .title-2022 {
             &:after {
                 background-color: white;
             }
         }
     }
     &.bg-azure {
-        background: linear-gradient(126.49deg, #458097 0%, #212636 100%);
+        background: linear-gradient(126.49deg, $teal 0%, $raisin 100%);
         color: white;
         p, div {
             color: white;
         }
-        .title {
+        .title-2022 {
             &:after {
                 background-color: white;
             }
         }
     }
     &.bg-raisin {
-        background: #212636;
+        background: $raisin;
         color: white;
         .grid p, .grid div {
             color: white;
         }
-        .title {
+        .title-2022 {
             .section-name {
                 color: white;
-            }
-            &:after {
-                /*background-color: white;*/
             }
         }
     }
@@ -217,7 +104,7 @@ p>a {
             }
         }
     }
-    .title {
+    .title-2022 {
         max-width: 60%;
     }
     .polka {
@@ -230,7 +117,6 @@ p>a {
         top: 100px;
         width: 40%;
         height: 105px; 
-        background-image: url('/dist/images/polka.svg');
         background-size: 9px auto;
     }
     .polka.d {
@@ -247,7 +133,6 @@ p>a {
             width: 80%;
             max-width: 1400px;
             height: 105px; 
-            background-image: url('/dist/images/polka.svg');
             background-size: 9px auto;
             transform: translate(-50%, 60px);
         }
@@ -261,7 +146,7 @@ p>a {
             display: block;
             width: 100px;
             height: 100px;
-            background-color: #D91F37;
+            background-color: $crimson;
             opacity: 0.15;
             border-radius: 100px;
             position: absolute;
@@ -272,16 +157,38 @@ p>a {
     }
 }
 
-.question {
-    text-decoration: line-through;
-    background-color: aqua;
+.cradle {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    padding: 0 15px;
 }
 
-.card {
-    h4 {
-        text-transform: uppercase;
+.cradle-right {
+    margin-left: auto; 
+    margin-right: 0;
+    padding-left: 15px;
+    max-width: calc(50% + 700px);
+}
+
+.padded-2022 {
+    padding: 0 15px;
+}
+
+.title-2022 {
+    .section-name {
+        color: $sonic;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 30px;
     }
-    h5 {
-        margin-top: 10px;
+    &:after {
+        content: "";
+        display: block;
+        margin-top: 25px;
+        width: 105px;
+        height: 10px;
+        background-color: $crimson;
+        margin-bottom: 50px;
     }
 }

@@ -1,13 +1,14 @@
 @import '_colors';
 
-.brick {
+.brick-2022 {
+    margin-top: 50px;
     .grid {
         background-color: $raisin;
         display: grid;
         grid-template-columns: 60% 40%;
         .content {
             padding: 90px;
-            &>p, &>h3 {
+            p, h3, span {
                 color: white;
             }
             &>p {

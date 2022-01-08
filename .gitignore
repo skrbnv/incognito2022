@@ -1,4 +1,4 @@
-/.DS_Store
-dist/.DS_Store
-dist/images/.DS_Store
-dist/images/.DS_Store
+.DS_Store
+dist/
+_old_stuff/
+.vscode/

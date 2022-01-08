@@ -1,0 +1,107 @@
+@keyframes flipperX {
+    0%   { transform: scaleX(100%); }
+    50%  { transform: scaleX(0); }
+    100% { transform: scaleX(100%); }
+  }
+
+@keyframes flipperY {
+    0%   { transform: scaleY(100%); }
+    50%  { transform: scaleY(0); }
+    100% { transform: scaleY(100%); }
+  }
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    &>div.menu, &>div.hero {
+        margin-top: 0 !important;
+    }
+    a {
+        color: $crimson;
+        position: relative;
+        text-decoration: none;
+        &.right {
+            padding-right: 25px;
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 20px;
+                height: 100%;
+                background-color: $crimson;
+                mask-position: center center;
+                mask-repeat: no-repeat;
+                /*animation-duration: .4s;
+                animation-iteration-count: 1;*/
+            }
+            &:active, &:hover {
+                &:after {
+                    animation-name: flipperY;
+                    animation-timing-function: ease;
+                }
+            }
+        }
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    p>a {
+        text-decoration: underline;
+    }
+    .dropdown {
+        padding-right: 21px;
+        color: $raisin;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 16px;
+            height: 100%;
+            background-color: $raisin;
+            mask-position: center center;
+            mask-repeat: no-repeat;
+            /*animation-duration: .4s;
+            animation-iteration-count: 1;*/
+        }
+        &:active, &:hover {
+            &:after {
+                animation-name: flipperX;
+                animation-timing-function: ease;
+            }
+        }
+    }
+    .question {
+        text-decoration: line-through;
+        background-color: aqua;
+    }
+    .card {
+        h4 {
+            text-transform: uppercase;
+        }
+        h5 {
+            margin-top: 10px;
+        }
+    }
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid $raisin;
+    color: $raisin;
+}
+
+.hs-button.primary, input[type="submit"], input[type="button"] {
+    cursor: pointer;
+    -webkit-appearance: none;
+}

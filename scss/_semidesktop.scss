@@ -1,12 +1,12 @@
 @import '_colors';
 
 @media screen and (min-width: ($tablet + 1)) and (max-width: $semidesktop) {
-    .news {
+    .news-2022 {
         .card {
             padding: 60px !important;
         }
     }
-    .assets {
+    .assets-2022 {
         .prime {
             background-size: 80%;
             .content {
@@ -22,13 +22,13 @@
             width: 30% !important;
         }
     }
-    .hero {
+    .hero-2022 {
         .polka {
             width: initial !important;
             padding: 50px !important;
         }
     }
-    .hero2 {
+    .hero2-2022 {
         padding-top: 80px;
         .extrabg:before {
             background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 85%, white 85%);
@@ -38,12 +38,12 @@
             padding: 50px !important;
         }
     }
-    .customers {
+    .customers-2022 {
         .polka {
             bottom: 50px;
         }
     }
-    .three-columns {
+    .three-columns-2022 {
         .grid {
             gap: 30px;
             margin-left: 0;
@@ -53,12 +53,12 @@
             }
         }
     }
-    .alternating-columns {
+    .alternating-columns-2022 {
         .grid {
             margin-left: 0;
         }
     }
-    .regular-block {
+    .regular-block-2022 {
         .grid {
             gap: 20px;
             grid-template-columns: auto 40%;
@@ -66,14 +66,14 @@
         .image:after {
             display: none !important;
         }
-    }
-    .regular-block.image-left {
-        .grid {
-            grid-template-columns: 40% auto;
+        .image-left {
+            .grid {
+                grid-template-columns: 40% auto;
+            }
         }
     }
 
-    .two-cards {
+    .two-cards-2022 {
         .cradle {
             padding: 0 15px;
             padding-bottom: 60px;
@@ -82,7 +82,7 @@
             }
         }
     }
-    .two-column-cards {
+    .two-column-cards-2022 {
         .grid {
             gap: 20px;
             .card {
@@ -96,7 +96,7 @@
             }
         }
     }
-    .double-video {
+    .double-video-2022 {
         .cradle {
             padding: 60px 15px 0 15px;
             &:after {
@@ -107,7 +107,7 @@
             }
         }
     }
-    .tabs {
+    .tabs-2022 {
         .tab {
             padding: 40px;
             .grid {
@@ -118,7 +118,7 @@
             }
         }
     }
-    .tabs-vertical {
+    .tabs-vertical-2022 {
         .r {
             padding: 40px !important;
         }
@@ -128,6 +128,15 @@
         &.useimage .r {
             padding: 40px;
             background: $lightgray;
+        }
+    }
+    .footer-2022 {
+        .grid {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 80px 20px;
+            .company_info {
+                grid-column: 1 / span 3;
+            }
         }
     }
 }

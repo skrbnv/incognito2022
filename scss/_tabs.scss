@@ -1,6 +1,7 @@
 @import '_colors';
 
-.tabs {
+.tabs-2022 {
+    margin-top: 50px;
     .labelgrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -9,6 +10,7 @@
             text-align: center;
             padding: 15px;
             color: $gray;
+            cursor: pointer; 
             &:after {
                 content: "";
                 position: absolute;
@@ -28,6 +30,7 @@
     .tab {
         background-color: $lightgray;
         padding: 90px;
+        display: none;
         .grid {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -45,16 +48,28 @@
                 }
             }
         }
+        &.active {
+            display: block; 
+        }
     }
 }
 
-.tabs-vertical {
+
+.tabs-vertical-2022 {
+    margin-top: 50px;
+    .tab {
+        display: none !important;
+        &.active {
+            display: grid !important; 
+        }
+    }
     .grid {
         display: grid;
         grid-template-columns: 1fr 3fr;
         .l {
             padding-top: 150px;
             .label {
+                cursor: pointer; 
                 padding: 10px 20px;
                 color: $gray;
                 &.selected {

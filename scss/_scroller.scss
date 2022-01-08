@@ -1,6 +1,7 @@
 @import '_colors';
 
-.scroller {
+.scroller-2022 {
+    margin-top: 50px;
     &>.content {
         display: grid;
         grid-template-columns: 150px auto;
@@ -23,15 +24,14 @@
             -webkit-filter: grayscale(100%);
             pointer-events: none;
         }
-        .prev {
-            background-image: url('/dist/images/chevron-left-thin.svg');
-        }
-        .next {
-            background-image: url('/dist/images/chevron-right-thin.svg');
-        }
 
     }
     .cards {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100vh;
+        min-height: 0;
+        min-width: 0;
         .card {
             width: 350px;
             .image {
@@ -52,5 +52,11 @@
                 }
             }
         }
+    }
+    .swiper-container {
+        max-width: 100%;
+        max-height: 100vh;
+        min-height: 0;
+        min-width: 0;
     }
 }

@@ -1,13 +1,23 @@
 @import '_colors';
 
-h1, h2, h3, h4, h5, h6, p, a, body {
+@font-face {
+    font-family:'FontAwesome';
+    src:url('https://cdn2.hubspot.net/hubfs/5315915/Assets/fontawesome-webfont.eot'),
+        url('https://cdn2.hubspot.net/hubfs/5315915/Assets/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn2.hubspot.net/hubfs/5315915/Assets/fontawesome-webfont.woff') format('woff'),
+        url('https://cdn2.hubspot.net/hubfs/5315915/Assets/fontawesome-webfont.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
-    /*
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    */
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
 }
 
 h1 {
@@ -48,42 +58,11 @@ li {
     margin:0 0 10px 0;   
 }
 
-.menu {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-}
-
-.button {
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 26px;
-}
 
 p {
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
-}
-
-.section-name {
-    color: $sonic;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 30px;
-}
-
-.footer, .footer p, .footer div {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.footer .small {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
 }
 
 @media screen and (min-width: ($tablet +1) ) and (max-width: $semidesktop) {
@@ -93,7 +72,7 @@ p {
     }
 }
 
-@media screen  and (max-width: $mobile) {
+@media screen and (max-width: $mobile) {
     h1 {
         font-size: 38px;
         font-weight: 800;
@@ -118,19 +97,6 @@ p {
         line-height: 28px;
     }
     
-    .menu {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 26px;
-    }
-    
-    .button {
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 26px;
-        letter-spacing: 0.05em;
-    }
     
     p {
         font-size: 20px;
@@ -141,21 +107,6 @@ p {
         text-rendering: optimizeLegibility;
     }
     
-    .section-name {
-        font-size: 28px;
-        font-weight: 400;
-        line-height: 36px;
-    }
-    
-    .footer.l1 {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-    }
-    
-    .footer.l2 {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 22px;
-    } 
 }
+
+

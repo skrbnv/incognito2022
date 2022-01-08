@@ -1,6 +1,7 @@
 @import '_colors';
 
-.single-video {
+.single-video-2022 {
+    margin-top: 50px;
     overflow: hidden;
     .cradle {
         padding-top: 60px;
@@ -14,7 +15,7 @@
             top: 0;
             width: 150%;
             height: 85%;
-            background: linear-gradient(126.49deg, #212636 18.92%, #8C8C8C 100%);
+            background: linear-gradient(126.49deg, $raisin 18.92%, #8C8C8C 100%);
         }
     }
     .preview {
@@ -37,7 +38,8 @@
     }
 }
 
-.double-video {
+.double-video-2022 {
+    margin-top: 50px;
     overflow: hidden;
     .grid {
         display: grid;
@@ -58,7 +60,7 @@
             top: 0;
             width: 150%;
             height: 90%;
-            background: linear-gradient(126.49deg, #212636 18.92%, #8C8C8C 100%);
+            background: linear-gradient(126.49deg, $raisin 18.92%, #8C8C8C 100%);
         }
     }
     .preview {

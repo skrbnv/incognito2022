@@ -7,10 +7,24 @@
         }
     }
 
-    .hero {
+    .button-2022 {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+    }
+
+    .section-name {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    
+    .hero-2022 {
         padding-bottom: 150px;
     }
-    .hero2 {
+    .hero2-2022 {
         padding-top: 150px;
         .cradle {
             grid-template-columns: 1fr; 
@@ -21,10 +35,10 @@
             }
         }
     }
-    .after-hero {
+    .after-hero-2022 {
         margin-top: 100px !important;
     }
-    .scroller {
+    .scroller-2022 {
         .content {
             grid-template-columns: 70px auto;
             .card {
@@ -32,9 +46,12 @@
             }
         }
     }
-    .customers {
+    .customers-2022 {
         padding-bottom: 220px;
         .cradle {
+            .grid {
+                grid-template-columns: 1fr; 
+            }
             grid-template-columns: 1fr;
             .logos {
                 grid-template-columns: 1fr;
@@ -46,7 +63,7 @@
         }
     }
 
-    .news {
+    .news-2022 {
         .cradle {
             padding: 0;
         }
@@ -65,7 +82,7 @@
         }
     }
 
-    .assets {
+    .assets-2022 {
         .prime {
             background-size: 100%;
             .content {
@@ -85,7 +102,7 @@
         }
     }
 
-    .three-columns {
+    .three-columns-2022 {
         .grid {
             grid-template-columns: 1fr;
             margin-left: 0;
@@ -100,12 +117,12 @@
         .polka {
             display: none;
         }
-        .title {
+        .title-2022 {
             max-width: 100% !important;
         }
     }
 
-    .alternating-columns {
+    .alternating-columns-2022 {
         .grid {
             margin-left: 0;
             display: block;
@@ -121,7 +138,7 @@
         }
     }
 
-    .regular-block {
+    .regular-block-2022 {
         .grid {
             grid-template-columns: 1fr;
             .image {
@@ -132,7 +149,7 @@
         }
     }
 
-    .two-cards {
+    .two-cards-2022 {
         &:before {
             left: 0;
             width: 100%;
@@ -147,7 +164,7 @@
         }
     }
 
-    .double-columns {
+    .double-columns-2022 {
         .grid {
             grid-template-columns: 1fr !important;
             &>div:first-child {
@@ -160,7 +177,7 @@
         }
     }
 
-    .two-column-cards {
+    .two-column-cards-2022 {
         .grid {
             grid-template-columns: 1fr;
             gap: 20px;
@@ -173,7 +190,7 @@
         }
     }
 
-    .brick {
+    .brick-2022 {
         .cradle {
             padding: 0;
         }
@@ -185,7 +202,7 @@
         }
     }
 
-    .single-video {
+    .single-video-2022 {
         .cradle {
             padding: 80px 15px 30px 15px;
             &:after {
@@ -196,7 +213,7 @@
         }
     }
 
-    .double-video {
+    .double-video-2022 {
         .grid {
             grid-template-columns: 1fr;
         }
@@ -210,7 +227,7 @@
         }
     }
 
-    .spread {
+    .spread-2022 {
         .grid {
             grid-template-columns: 1fr;
         }
@@ -222,7 +239,7 @@
         }
     }
 
-    .tabs {
+    .tabs-2022 {
         .cradle {
             padding: 0;
         }
@@ -238,7 +255,7 @@
 
     }
 
-    .tabs-vertical {
+    .tabs-vertical-2022 {
         .cradle {
             padding: 0;
         }
@@ -262,6 +279,24 @@
                 }
             }
         }
+    }
+
+    .footer-2022 {
+        padding: 50px 0;
+        .grid {
+            grid-template-columns: 1fr;
+        }
+        .l1 {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        
+        .l2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+        } 
     }
 }
 

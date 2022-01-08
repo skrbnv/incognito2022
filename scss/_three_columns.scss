@@ -1,6 +1,7 @@
 @import '_colors';
 
-.three-columns {
+.three-columns-2022 {
+    margin-top: 50px;
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -15,7 +16,7 @@
         .grid {
             gap: 60px 7%;
             .card {
-                padding-left: 45px;
+                padding-left: 50px;
                 position: relative;
             }
             .image {

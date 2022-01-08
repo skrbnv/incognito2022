@@ -1,11 +1,12 @@
 @import '_colors';
 
-.assets {
+.assets-2022 {
+    margin-top: 50px;
     .prime {
         overflow: hidden;
         position: relative;
         color: white;
-        background: linear-gradient(126.49deg, #458097 0%, #212636 100%);
+        background: linear-gradient(126.49deg, $teal 0%, $raisin 100%);
         background-position-x: right;
         background-size: 60%;
         background-repeat: no-repeat;
@@ -32,7 +33,7 @@
                     display: block;
                     width: 100px;
                     height: 100px;
-                    background-color: #D91F37;
+                    background-color: $crimson;
                     opacity: 0.15;
                     border-radius: 100px;
                     position: absolute;
@@ -50,7 +51,6 @@
                     width: 80%;
                     height: 90px;
                     z-index: 2; 
-                    background-image: url('/dist/images/polka.svg');
                     background-size: 9px auto;
                 }
             }

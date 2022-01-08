@@ -1,0 +1,121 @@
+@import '_colors';
+.footer-2022 {
+    background-color: $raisin;
+    color: $semigray;
+    padding: 150px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    p, div {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    .small {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    .logo {
+        img {
+            width: 100%;
+            max-width: 140px;
+            height: auto;
+        }
+    }
+    a {
+        color: white; 
+    }
+    .right {
+        padding-right: 22px;
+        &:after {
+            width: 17px;
+        }
+    }
+    .company_info {
+        h6 {
+            text-transform: none;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .contact_link {
+            font-size: 16px;
+            padding-right: 21px;
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 16px;
+                height: 100%;
+                background-color: white;
+                -webkit-mask-position: center center;
+                        mask-position: center center;
+                -webkit-mask-repeat: no-repeat;
+                        mask-repeat: no-repeat;
+            }
+            &:hover, &:active {
+                color: $sonic;
+                &:after {
+                    background-color: $sonic;
+                }
+            }
+        }
+    }
+    .footer_menus {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        p, a {
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        p>a {
+            font-size: 16px !important; 
+        }
+        h6 {
+            margin-bottom: 15px; 
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            a {
+                font-weight: 600;
+            }
+        }
+        a:hover, a:active {
+            color: $sonic;
+        }
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 35% 1fr 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+.below_footer-2022 {
+    background-color: black; 
+    color: white;
+    padding: 30px 0;
+    .copyright {
+        font-size: 14px; 
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto minmax(100px, max-content);
+        gap: 20px;
+    }
+    .social {
+        color: white;
+        display: inline-block;
+        padding: 0 0 0 30px; 
+        &:hover, &:active {
+            color: $sonic;
+        } 
+    }
+}
+

@@ -1,9 +1,11 @@
 @import '_colors';
 
-.spread {
+.spread-2022 {
+    margin-top: 50px;
+    padding-top: 75px;
     position: relative;
     background: transparent !important;
-    padding-bottom: 100px !important;
+    padding-bottom: 135px !important;
     &:before {
         content: "";
         display: block;
@@ -21,7 +23,7 @@
         margin-top: 25px;
         width: 105px;
         height: 10px;
-        background-color: #D91F37;
+        background-color: $crimson;
         margin-bottom: 50px;
     }
     .background-image {
@@ -54,8 +56,13 @@
         left: 5%;
         bottom: 0;
         height: 105px;
-        background-image: url('/dist/images/polka-gray.svg');
         background-size: 9px auto;
+    }
+}
 
+@media screen and (max-width: $mobile) {
+    .spread-2022 {
+        margin-top: 50px;
+        padding-bottom: 0px !important;
     }
 }
